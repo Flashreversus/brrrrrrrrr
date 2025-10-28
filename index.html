@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flash | Universo Star Wars</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    body {
+      background-color: #000;
+      color: #e0e0e0;
+      font-family: 'Orbitron', sans-serif;
+      background-image: radial-gradient(circle at top, #101010, #000);
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.8);
+      border-bottom: 2px solid #ffcc00;
+    }
+
+    .nav-link {
+      color: #ffcc00 !important;
+      font-weight: 600;
+      transition: transform 0.2s;
+    }
+
+    .nav-link:hover {
+      transform: scale(1.1);
+      color: #fff !important;
+    }
+
+    .btn-primary {
+      background-color: #ffcc00;
+      color: #000;
+      border: none;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+
+    .btn-primary:hover {
+      background-color: #fff;
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    .hero {
+      background: url('img/starwars-bg.jpg') center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      text-shadow: 0 0 15px #ffcc00;
+    }
+
+    .section {
+      padding: 5rem 0;
+    }
+
+    .galeria img {
+      border: 2px solid #ffcc00;
+      transition: transform 0.3s ease;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #111;
+      border-top: 1px solid #ffcc00;
+    }
+
+    footer i {
+      font-size: 1.5rem;
+      margin: 0 10px;
+      color: #ffcc00;
+      transition: transform 0.3s;
+    }
+
+    footer i:hover {
+      transform: scale(1.2);
+      color: #fff;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+  </style>
+</head>
+
+<body>
+  <header class="p-3 sticky-top">
+    <nav class="container d-flex justify-content-between align-items-center">
+      <h1 class="text-warning fw-bold">FLASH<span class="text-light">.SW</span></h1>
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div>
+        <h1>Bem-vindo ao universo Star Wars</h1>
+        <p class="lead mt-3">Explorando a galáxia com Flash — o Jedi da Física</p>
+        <a href="#galeria" class="btn btn-primary mt-4">Explorar Galáxia</a>
+      </div>
+    </section>
+
+    <section id="galeria" class="section galeria text-center">
+      <div class="container">
+        <h2 class="text-warning mb-5">Galeria Galáctica</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <img src="img/luke.jpg" class="img-fluid rounded-4" alt="Luke Skywalker">
+          </div>
+          <div class="col-md-4">
+            <img src="img/vader.jpg" class="img-fluid rounded-4" alt="Darth Vader">
+          </div>
+          <div class="col-md-4">
+            <img src="img/yoda.jpg" class="img-fluid rounded-4" alt="Mestre Yoda">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section text-center">
+      <div class="container col-md-8">
+        <h2 class="text-warning mb-4">Fale com Flash</h2>
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control rounded-pill text-center" placeholder="Seu nome">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control rounded-pill text-center" placeholder="Seu e-mail">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control rounded-4 text-center" rows="4" placeholder="Sua mensagem"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary rounded-pill px-5">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center py-4">
+    <p class="mb-2 text-light">Conecte-se com Flash:</p>
+    <i class="bi bi-whatsapp"></i>
+    <i class="bi bi-instagram"></i>
+    <i class="bi bi-github"></i>
+    <p class="mt-3 text-muted small">© 2025 Flash | Site temático Star Wars — Força e ciência em harmonia.</p>
+  </footer>
+</body>
+
+</html>
